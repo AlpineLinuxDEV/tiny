@@ -9,7 +9,7 @@ COPY tiny.conf .
 RUN chmod +x ./tiny.conf
 
 #CMD tinyproxy -d -c ./tiny.conf
-EXPOSE 8888
+EXPOSE 8080
 CMD supervisord -c ./supervisord.conf
 
 # docker build -t flytiny .
